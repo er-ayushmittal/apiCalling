@@ -1,0 +1,65 @@
+<div class="container">
+    <form [FormGroup]="form" (ngSubmit)="submitForm()">
+        <!-- <div class="form-group">
+            <input type="file" (change)="uploadFile($event)">
+        </div> -->
+        <div class="form-group input-group-lg">
+            <input class="form-control" placeholder="mobilenumber" formControlName="mobilenumber">
+        </div>
+        <div class="form-group input-group-lg">
+            <input class="form-control" placeholder="firstname" formControlName="firstname">
+        </div>
+        <div class="form-group input-group-lg">
+            <input class="form-control" placeholder="middlename" formControlName="middlename">
+        </div>
+        <div class="form-group input-group-lg">
+            <input class="form-control" placeholder="lastname" formControlName="lastname">
+        </div>
+        <div class="form-group input-group-lg">
+            <input class="form-control" placeholder="pan" formControlName="pan">
+        </div>
+        <div class="form-group input-group-lg">
+            <input class="form-control" placeholder="fathername" formControlName="fathername">
+        </div>
+        <div class="form-group input-group-lg">
+            <input class="form-control" placeholder="dob" formControlName="dob">
+        </div>
+        <div class="form-group input-group-lg">
+            <input class="form-control" placeholder="email" formControlName="email">
+        </div>
+        <div class="form-group input-group-lg">
+            <input class="form-control" placeholder="gender" formControlName="gender">
+        </div>
+        <div class="form-group input-group-lg">
+            <input class="form-control" placeholder="pincode" formControlName="pincode">
+        </div>
+        <div class="form-group input-group-lg">
+            <input class="form-control" placeholder="city" formControlName="city">
+        </div>
+        <div class="form-group input-group-lg">
+            <input class="form-control" placeholder="state" formControlName="state">
+        </div>
+        <div class="form-group">
+            <button class="btn btn-danger btn-block btn-lg">Create</button>
+        </div>
+    </form>
+</div>
+
+<br>
+<br>
+<table class="table table-dark">
+    <thead>
+      <tr>
+        <th scope="col">AppId</th>
+        <th scope="col">LeadId</th>
+        <th scope="col">Result</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>{{res.appid}}</td>
+        <td>{{res.leadid}}</td>
+        <td>{{res.result}}</td>
+      </tr>
+    </tbody>
+  </table>
